@@ -24,16 +24,16 @@ public class BubbleSort {
     /**
      * SWAP
      * @param array
-     * @param i
-     * @param j
+     * @param indexAtual
+     * @param proximoIndex
      */
-    public static void trocar(int[] array, int i, int j) {
-        if (i == j) {
+    public static void trocar(int[] array, int indexAtual, int proximoIndex) {
+        if (indexAtual == proximoIndex) {
             return;
         }
 
-        int temporario = array[i];
-        array[i] = array[j];
-        array[j] = temporario;
+        int temporario = array[indexAtual];
+        array[indexAtual] = array[proximoIndex];
+        array[proximoIndex] = temporario;
     }
 }
