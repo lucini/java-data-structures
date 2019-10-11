@@ -1,6 +1,12 @@
-package com.lucini.sort.bubble;
+package com.lucini.sort;
 
+
+/**
+ *  Complexidade quadrática
+ *  Menos eficiente
+ */
 public class BubbleSort {
+
     public static void main(String[] args) {
 
         int[] intArray = {10, -15, 8, 35, -11, 55, 12};
@@ -36,4 +42,5 @@ public class BubbleSort {
         array[indexAtual] = array[proximoIndex];
         array[proximoIndex] = temporario;
     }
+
 }
